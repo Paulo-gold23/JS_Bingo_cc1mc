@@ -1,0 +1,114 @@
+*{
+  background-color: #474D61;
+
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin-bottom: 20px; 
+  color: #607FE0;
+  
+
+} 
+input::placeholder {
+  background-color: #999; 
+  font-style: italic; 
+}
+
+.bingo-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.bingo-card {
+  width: 250px;
+  height: 250px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 8px;
+  justify-items: center;
+  align-items: center;
+}
+
+.bingo-number {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgb(23, 230, 4);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.green {
+  background-color: #607FE0 !important;
+}
+
+#winner-message {
+  margin-top: 20px;
+  font-weight: bold;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.player-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#drawn-numbers {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 10px; 
+  margin-top: 10px;
+  padding: 10px;
+
+  border-radius: 05px;
+  background-color: #ffffff;
+  font-size: 15px;
+  font-weight: bold; 
+  border: 5px solid;
+  border-image: linear-gradient(to right, #000,#607FE0 );
+  border-image-slice: 1;
+}
+
+button {
+  
+    background-color: transparent;
+    border: none;
+    color: #A8B7E6;
+    padding: 0;
+    text-align: center;
+    text-decoration: underline;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+
+#drawn-numbers{
+  margin-top: 130px;
+  margin-right: 400px;
+  font-family: monospace;
+  white-space: pre-wrap;
+}
